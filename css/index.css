@@ -1,92 +1,188 @@
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 10%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #152e55;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+body {
+  height: 100%;
+}
+
+.custom-btn {
+  width: 100%;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
 button {
-    margin: 3%;
-  }
-  .custom-btn {
-    width: 8%;
-    height: 5%;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-  }
+  font-size: 150%;
+}
 
   
 /* 3 */
 .btn-3 {
-    background: rgb(0,172,238);
-  background: linear-gradient(0deg, rgb(9, 84, 159) 0%, rgba(2,126,251,1) 100%);
-    line-height: 42px;
-    padding: 0;
-    border: none;
+  background: rgb(19, 111, 197);
+  background: linear-gradient(0deg, rgb(19, 111, 197) 0%, rgb(19, 111, 197) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
     
-  }
-  .btn-3 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .btn-3:before,
-  .btn-3:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-     background: rgba(2,126,251,1);
-    transition: all 0.3s ease;
-  }
-  .btn-3:before {
-    height: 0%;
-    width: 2px;
-  }
-  .btn-3:after {
-    width: 0%;
-    height: 2px;
-  }
-  .btn-3:hover{
-     background: transparent;
-    box-shadow: none;
-  }
-  .btn-3:hover:before {
-    height: 100%;
-  }
-  .btn-3:hover:after {
-    width: 100%;
-  }
-  .btn-3 span:hover{
-     color: rgb(9, 84, 159);
-  }
-  .btn-3 span:before,
-  .btn-3 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-     background: rgb(9, 84, 159);
-    transition: all 0.3s ease;
-  }
-  .btn-3 span:before {
-    width: 2px;
-    height: 0%;
-  }
-  .btn-3 span:after {
-    width: 0%;
-    height: 2px;
-  }
-  .btn-3 span:hover:before {
-    height: 100%;
-  }
-  .btn-3 span:hover:after {
-    width: 100%;
-  }
+}
+.btn-3 a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+    background: rgb(19, 111, 197);
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+    background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+    color: rgb(19, 111, 197);
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+    background: rgb(19, 111, 197);
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 5%;
+  text-align: right;
+  padding-top: 1%;
+  position: fixed;
+}
+
+.header{
+  width: 100%;
+  text-align: left;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+.header a{
+  font-size: 300%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+  font-family: 'Nunito', sans-serif;
   
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  background: linear-gradient(-45deg, #2a2a36, #152e55, #2a292e, #26386b);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.content {
+  padding-top: 15%;
+  font-size: 150%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+
+.footer {
+  bottom: 0;
+  left: 25%;
+  margin: auto;
+  text-align: center !important;
+  position: fixed;
+}
